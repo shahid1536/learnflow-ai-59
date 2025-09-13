@@ -47,6 +47,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        learning: {
+          primary: "hsl(var(--learning-primary))",
+          secondary: "hsl(var(--learning-secondary))",
+          accent: "hsl(var(--learning-accent))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -80,10 +93,32 @@ export default {
             height: "0",
           },
         },
+        "progress": {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" }
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "progress": "progress 2s ease-in-out",
+        "float": "float 3s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-progress": "var(--gradient-progress)",
+      },
+      boxShadow: {
+        "elegant": "var(--shadow-elegant)",
+        "card": "var(--shadow-card)",
+      },
+      transitionTimingFunction: {
+        "smooth": "var(--transition-smooth)",
       },
     },
   },
